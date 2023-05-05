@@ -1,8 +1,5 @@
-### Disclaimer
-
-This was my first Game Jam Entry and my first released game
-
-Entry for [Nexus Game Jam III](https://itch.io/jam/nexus-game-jam-iii)
+#### Game Entry for [Nexus Game Jam III](https://itch.io/jam/nexus-game-jam-iii)
+#### Disclaimer: This was my first Game Jam and my first released game 🎉
 
 # Social Interaction Warrior
 
@@ -26,3 +23,6 @@ SFX Sounds taken from [Kenney Assets](https://www.kenney.nl/assets/category:Audi
 
 Music by [David Renda](https://www.fesliyanstudios.com/royalty-free-music/download/8-bit-retro-funk/883)
 
+## Disclaimer
+
+This was my first Game Jam Entry and my first released game
