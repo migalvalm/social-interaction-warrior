@@ -3,11 +3,15 @@
 
 # Social Interaction Warrior
 
+![main_menu](https://user-images.githubusercontent.com/59445459/236382182-9135b6f9-6475-4311-ae3c-b6dc65161320.PNG)
+
 A take on Arena Survival and Social Interactions mixed with a "Vampire Survivors" battle system and a rogue-lite abilities build system, where the weapons are phrases and your personality is set by the pair of glasses you decide to use.
 
 Kinda sounds like life right?
 
 ## Loop
+
+![gameplay](https://user-images.githubusercontent.com/59445459/236382179-a6e1b7c4-1d64-41dc-b7d5-b7f0dec51a52.PNG)
 
 - Choose your Glasses and fight with the main ability of it
 - Evolve your abilities and player, in a rogue-lite format
