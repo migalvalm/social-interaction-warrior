@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://bqj2li6u4l7va"]
+
+[ext_resource type="Script" path="res://resources/abilities/ability_upgrade.gd" id="1_2ut56"]
+
+[resource]
+script = ExtResource("1_2ut56")
+id = "radius"
+max_quantity = 0
+name = "Attack Range"
+description = "Increases the radius of the player abilities by 0.2%"

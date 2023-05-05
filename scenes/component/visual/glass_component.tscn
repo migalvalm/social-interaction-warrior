@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://caxtutnyyyf7k"]
+
+[ext_resource type="Script" path="res://scenes/component/visual/glass_component.gd" id="2_vpxbe"]
+
+[node name="GlassComponent" type="Sprite2D"]
+flip_h = true
+script = ExtResource("2_vpxbe")

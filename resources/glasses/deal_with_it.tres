@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="PlayerGlass" load_steps=2 format=3 uid="uid://cny0ftuvqrqb5"]
+
+[ext_resource type="Script" path="res://resources/glasses/glasses.gd" id="1_o18y6"]
+
+[resource]
+script = ExtResource("1_o18y6")
+id = "deal_with_it"
+max_level = 10
+experience_cost = 10
+max_quantity = 5
+texture_path = "res://assets/glasses/deal_with_it.png"
+main_ability_path = "res://resources/abilities/bye.tres"
+title = "Deal With It Glasses"
+description = "You just don't care don't you cheeky bastard
+
+
+
+
+Main Ability: Slicing Bye"

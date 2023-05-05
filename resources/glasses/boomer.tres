@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PlayerGlass" load_steps=2 format=3 uid="uid://ctpkuqa7u3iwp"]
+
+[ext_resource type="Script" path="res://resources/glasses/glasses.gd" id="1_rg5oh"]
+
+[resource]
+script = ExtResource("1_rg5oh")
+id = "boomer"
+max_level = 10
+experience_cost = 10
+max_quantity = 5
+texture_path = "res://assets/glasses/boomer.png"
+main_ability_path = "res://resources/abilities/fuckyou.tres"
+title = "Boomer Glasses"
+description = "You will bring chaos into the world
+
+Main Ability: Spinning Fuck You"

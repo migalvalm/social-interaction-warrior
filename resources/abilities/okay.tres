@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Ability" load_steps=3 format=3 uid="uid://dnnu7bjubok5"]
+
+[ext_resource type="PackedScene" uid="uid://0tvxoi168aph" path="res://scenes/ability/okay/okay_ability_controller.tscn" id="1_ed85l"]
+[ext_resource type="Script" path="res://resources/abilities/ability.gd" id="1_j2j0t"]
+
+[resource]
+script = ExtResource("1_j2j0t")
+ability_controller_scene = ExtResource("1_ed85l")
+id = "okay"
+max_quantity = 0
+name = "Okay"
+description = "A dropping from the sky okay"

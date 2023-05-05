@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PlayerGlass" load_steps=2 format=3 uid="uid://qgplicyam7tm"]
+
+[ext_resource type="Script" path="res://resources/glasses/glasses.gd" id="1_8q8hq"]
+
+[resource]
+script = ExtResource("1_8q8hq")
+id = "default"
+max_level = 10
+experience_cost = 10
+max_quantity = 5
+texture_path = "res://assets/glasses/default.png"
+main_ability_path = "res://resources/abilities/okay.tres"
+title = "Normal Glasses"
+description = "Just your tipically glasses, you basically have no personality.
+
+Main Ability: Falling Okay"

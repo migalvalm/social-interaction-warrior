@@ -1,0 +1,18 @@
+[gd_scene load_steps=9 format=3 uid="uid://cqgu5wmgy1xjo"]
+
+[ext_resource type="Script" path="res://scenes/component/visual/hit_flash_component.gd" id="1_owiye"]
+[ext_resource type="Material" uid="uid://nc66gytqq3o6" path="res://scenes/component/visual/hit_flash_component_material.tres" id="2_j87nq"]
+[ext_resource type="PackedScene" uid="uid://bkl3lt1rvfm7d" path="res://scenes/component/audio/audio_player_2d_component.tscn" id="3_x622m"]
+[ext_resource type="AudioStream" uid="uid://dwuwkm2jkrgdo" path="res://assets/audio/footstep_carpet_000.ogg" id="4_478mn"]
+[ext_resource type="AudioStream" uid="uid://dl3wdtfxvo27d" path="res://assets/audio/footstep_carpet_001.ogg" id="5_vwtvx"]
+[ext_resource type="AudioStream" uid="uid://db7vr4pch5u1v" path="res://assets/audio/footstep_carpet_002.ogg" id="6_obwmg"]
+[ext_resource type="AudioStream" uid="uid://dbr5o6opv2iws" path="res://assets/audio/footstep_carpet_003.ogg" id="7_fii0n"]
+[ext_resource type="AudioStream" uid="uid://clhxvu22ak6gr" path="res://assets/audio/footstep_carpet_004.ogg" id="8_76h15"]
+
+[node name="HitFlashComponent" type="Node"]
+script = ExtResource("1_owiye")
+hit_flash_material = ExtResource("2_j87nq")
+
+[node name="AudioPlayer2DComponent" parent="." instance=ExtResource("3_x622m")]
+bus = &"SFX"
+streams = Array[AudioStream]([ExtResource("4_478mn"), ExtResource("5_vwtvx"), ExtResource("6_obwmg"), ExtResource("7_fii0n"), ExtResource("8_76h15")])

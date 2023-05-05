@@ -1,0 +1,206 @@
+[gd_scene load_steps=8 format=3 uid="uid://cmeh8v8c1yfwh"]
+
+[ext_resource type="Script" path="res://scenes/ui/main_menu.gd" id="1_ksehv"]
+[ext_resource type="PackedScene" uid="uid://t0ypltxpbru7" path="res://scenes/ui/sound_button.tscn" id="2_1uuht"]
+[ext_resource type="PackedScene" uid="uid://bbp4l2jdjb70w" path="res://scenes/ui/parallax_background.tscn" id="2_lge1f"]
+[ext_resource type="Texture2D" uid="uid://b4mk2fnaucgmi" path="res://assets/ui/A.png" id="4_iymyx"]
+[ext_resource type="Texture2D" uid="uid://c0afqru0e25es" path="res://assets/ui/D.png" id="5_i3j31"]
+[ext_resource type="Texture2D" uid="uid://d1i2l6d2obq2t" path="res://assets/ui/S.png" id="6_8hdc2"]
+[ext_resource type="Texture2D" uid="uid://dvq8au338fwrj" path="res://assets/ui/W.png" id="7_wvbao"]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_ksehv")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_lge1f")]
+
+[node name="Main" type="MarginContainer" parent="."]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Menu" type="MarginContainer" parent="Main"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PanelContainer" type="PanelContainer" parent="Main/Menu"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="Main/Menu/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Main/Menu/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="Main/Menu/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"BlueOutlineLabel"
+theme_override_font_sizes/font_size = 32
+text = "Social Interaction Warrior"
+uppercase = true
+
+[node name="PlayButton" parent="Main/Menu/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_1uuht")]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Play
+"
+
+[node name="OptionsButton" parent="Main/Menu/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_1uuht")]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Options
+"
+
+[node name="QuitButton" parent="Main/Menu/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_1uuht")]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit
+"
+
+[node name="Tips" type="MarginContainer" parent="Main"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="ControlsContainer" type="PanelContainer" parent="Main/Tips"]
+custom_minimum_size = Vector2(100, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="Main/Tips/ControlsContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="Main/Tips/ControlsContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.909804, 0.482353, 0.454902, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "Controls"
+horizontal_alignment = 1
+
+[node name="Visuals" type="Node2D" parent="Main/Tips/ControlsContainer/MarginContainer"]
+position = Vector2(-47, 0)
+
+[node name="A" type="Sprite2D" parent="Main/Tips/ControlsContainer/MarginContainer/Visuals"]
+position = Vector2(80, 54)
+texture = ExtResource("4_iymyx")
+
+[node name="D" type="Sprite2D" parent="Main/Tips/ControlsContainer/MarginContainer/Visuals"]
+position = Vector2(113, 54)
+texture = ExtResource("5_i3j31")
+
+[node name="S" type="Sprite2D" parent="Main/Tips/ControlsContainer/MarginContainer/Visuals"]
+position = Vector2(96, 54)
+texture = ExtResource("6_8hdc2")
+
+[node name="W" type="Sprite2D" parent="Main/Tips/ControlsContainer/MarginContainer/Visuals"]
+position = Vector2(96, 39)
+texture = ExtResource("7_wvbao")
+
+[node name="Objective" type="MarginContainer" parent="Main"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/margin_left = 16
+
+[node name="TextContainer" type="PanelContainer" parent="Main/Objective"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="Main/Objective/TextContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="Main/Objective/TextContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.909804, 0.482353, 0.454902, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "Mission"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Main/Objective/TextContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.909804, 0.482353, 0.454902, 1)
+theme_override_colors/font_outline_color = Color(0.909804, 0.482353, 0.454902, 1)
+text = "Survive 10 minutes"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Credits" type="MarginContainer" parent="Main"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_constants/margin_left = 16
+
+[node name="TextContainer" type="PanelContainer" parent="Main/Credits"]
+custom_minimum_size = Vector2(100, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="Main/Credits/TextContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="Main/Credits/TextContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.909804, 0.482353, 0.454902, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "Made By"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Main/Credits/TextContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.909804, 0.482353, 0.454902, 1)
+theme_override_colors/font_outline_color = Color(0.909804, 0.482353, 0.454902, 1)
+text = "Miguel Almeida
+"
+horizontal_alignment = 1
+vertical_alignment = 2

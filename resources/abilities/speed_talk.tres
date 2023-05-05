@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://cd5xg7ue050qi"]
+
+[ext_resource type="Script" path="res://resources/abilities/ability_upgrade.gd" id="1_2txfa"]
+
+[resource]
+script = ExtResource("1_2txfa")
+id = "speed_talk"
+max_quantity = 0
+name = "Speed Talk"
+description = "Increases the talk speed of the player by 0.2%"

@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://biuvlgthow16x"]
+
+[ext_resource type="Script" path="res://scenes/ui/glasses_menu.gd" id="1_cm0g2"]
+[ext_resource type="PackedScene" uid="uid://t0ypltxpbru7" path="res://scenes/ui/sound_button.tscn" id="2_q45wq"]
+[ext_resource type="Resource" uid="uid://qgplicyam7tm" path="res://resources/glasses/default.tres" id="2_xexx4"]
+[ext_resource type="Resource" uid="uid://cny0ftuvqrqb5" path="res://resources/glasses/deal_with_it.tres" id="3_k78n6"]
+[ext_resource type="Resource" uid="uid://ctpkuqa7u3iwp" path="res://resources/glasses/boomer.tres" id="4_jr1y4"]
+[ext_resource type="PackedScene" uid="uid://bbp4l2jdjb70w" path="res://scenes/ui/parallax_background.tscn" id="6_k6xqv"]
+
+[node name="GlassesMenu" type="CanvasLayer"]
+script = ExtResource("1_cm0g2")
+glasses = Array[Resource("res://resources/glasses/glasses.gd")]([ExtResource("2_xexx4"), ExtResource("3_k78n6"), ExtResource("4_jr1y4")])
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("6_k6xqv")]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 16
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 98.0
+offset_bottom = 73.0
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 16
+
+[node name="BackButton" parent="MarginContainer" instance=ExtResource("2_q45wq")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 25)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+auto_translate = false
+text = "Back
+"

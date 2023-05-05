@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpatweb5kyp0j"]
+
+[ext_resource type="Script" path="res://scenes/ability/fuckyou/fuckyou_ability.gd" id="1_qdvyv"]
+[ext_resource type="PackedScene" uid="uid://bwxxtr4pq8xsr" path="res://scenes/component/gameplay/hitbox_component.tscn" id="2_bk0m7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_40pdq"]
+radius = 10.0499
+
+[node name="FuckYouAbility" type="Node2D"]
+script = ExtResource("1_qdvyv")
+
+[node name="HitboxComponent" parent="." instance=ExtResource("2_bk0m7")]
+
+[node name="Collision" type="CollisionShape2D" parent="HitboxComponent"]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_40pdq")
+
+[node name="Visuals" type="Node2D" parent="."]
+position = Vector2(0, -10)
+scale = Vector2(0.8, 0.8)
+
+[node name="Label" type="Label" parent="Visuals"]
+unique_name_in_owner = true
+offset_left = -12.5
+offset_top = 1.25
+offset_right = 39.5
+offset_bottom = 31.25
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(0, 10)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.84979, 0.223097, 0.262622, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_outline_size = 6
+text = "Fuck You
+
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true

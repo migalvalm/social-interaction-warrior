@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgyjkwsg2fxo6"]
+
+[ext_resource type="Script" path="res://scenes/ability/fuckyou/fuckyou_ability_controller.gd" id="1_fn0x4"]
+[ext_resource type="PackedScene" uid="uid://dpatweb5kyp0j" path="res://scenes/ability/fuckyou/fuckyou_ability.tscn" id="2_j4x82"]
+
+[node name="FuckYouAbilityController" type="Node"]
+script = ExtResource("1_fn0x4")
+fuck_you_ability_scene = ExtResource("2_j4x82")
+base_wait_time = 0.5
+base_damage = 7
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true

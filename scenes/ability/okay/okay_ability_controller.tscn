@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://0tvxoi168aph"]
+
+[ext_resource type="Script" path="res://scenes/ability/okay/okay_ability_controller.gd" id="1_dinm8"]
+[ext_resource type="PackedScene" uid="uid://dj2xctpuwbnxj" path="res://scenes/ability/okay/okay_ability.tscn" id="2_7els6"]
+
+[node name="OkayAbilityController" type="Node"]
+script = ExtResource("1_dinm8")
+okay_ability_scene = ExtResource("2_7els6")
+base_wait_time = 0.8
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true

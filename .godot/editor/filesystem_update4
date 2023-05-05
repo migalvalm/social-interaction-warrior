@@ -1,0 +1,4 @@
+res://scenes/ui/end_screen.tscn
+res://resources/theme/theme.tres
+res://scenes/component/visual/death_component.tres
+res://resources/tileset/main.tres
