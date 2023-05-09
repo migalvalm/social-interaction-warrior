@@ -1,5 +1,7 @@
-#### Game Entry for [Nexus Game Jam III](https://itch.io/jam/nexus-game-jam-iii)
+#### Game Entry for [Nexus Game Jam III]([https://itch.io/jam/nexus-game-jam-iii](https://itch.io/jam/nexus-game-jam-iii/rate/2054311))
 #### Disclaimer: This was my first Game Jam and my first released game 🎉
+
+#### [Play it here](https://migalm.itch.io/siw)
 
 # Social Interaction Warrior
 
@@ -19,6 +21,8 @@ Kinda sounds like life right?
 - Choose your Glasses and fight with the main ability of it
 - Evolve your abilities and player, in a rogue-lite format
 - Become the strongest debater in the streets
+
+#### [Play it here](https://migalm.itch.io/siw)
 
 ## Credits
 
