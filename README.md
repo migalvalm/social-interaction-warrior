@@ -12,6 +12,9 @@ Kinda sounds like life right?
 ## Loop
 
 ![gameplay](https://user-images.githubusercontent.com/59445459/236382179-a6e1b7c4-1d64-41dc-b7d5-b7f0dec51a52.PNG)
+![2 (2)](https://github.com/migalvalm/social-interaction-warrior/assets/59445459/ede6a984-07ea-4703-94cd-386cf11d582c)
+![Untitled (2)](https://github.com/migalvalm/social-interaction-warrior/assets/59445459/7eb247c6-f608-43db-b273-532d8e14b18a)
+
 
 - Choose your Glasses and fight with the main ability of it
 - Evolve your abilities and player, in a rogue-lite format
